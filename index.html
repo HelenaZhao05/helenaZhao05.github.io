@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shunhua (Helena) Zhao</title>
+  <meta name="description"
+        content="Shunhua (Helena) Zhao — Computer Science at the University of Toronto. Research interests in LLM evaluation, alignment, and reward reliability.">
+
+  <style>
+    :root {
+      --text: #252525;
+      --muted: #666;
+      --blue: #23649b;
+      --line: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font-family: -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    a:focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: 4px;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.97);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      max-width: 940px;
+      margin: auto;
+      padding: 15px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      color: var(--text);
+      font-weight: 650;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 28px 40px;
+    }
+
+    header { margin-bottom: 48px; }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(30px, 5vw, 42px);
+      line-height: 1.2;
+      letter-spacing: -1px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 0 0 15px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 22px;
+      font-size: 15px;
+    }
+
+    section { margin-bottom: 44px; }
+
+    h2 {
+      margin: 0 0 20px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+      font-size: 23px;
+      font-weight: 650;
+    }
+
+    h3 {
+      margin: 0 0 4px;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    p { margin: 0 0 14px; }
+
+    article { margin-bottom: 25px; }
+
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 7px;
+    }
+
+    .interests {
+      padding-left: 21px;
+      margin: 12px 0;
+    }
+
+    .interests li { margin-bottom: 5px; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .nav-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px 22px;
+      }
+
+      .nav-links { gap: 15px; }
+
+      main { padding: 38px 22px; }
+
+      header { margin-bottom: 36px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="brand" href="#">Helena Zhao</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <h1>Shunhua (Helena) Zhao</h1>
+      <p class="subtitle">
+        Computer Science · University of Toronto
+      </p>
+      <div class="contact">
+        <a href="mailto:shunhua.zhao@mail.utoronto.ca">Email</a>
+        <a href="https://github.com/HelenaZhao05">GitHub</a>
+        <a href="https://www.linkedin.com/in/shunhuazhao">
+          LinkedIn
+        </a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am an undergraduate student in Computer Science
+        at the University of Toronto, with a minor in Statistics.
+        I am interested in how language models are trained,
+        evaluated, and aligned, especially how the reliability
+        of training signals affects model behavior.
+      </p>
+      <p>
+        My research experience spans LLM reward reliability,
+        multilingual value alignment, and natural language
+        understanding. Alongside research, I work on practical
+        machine learning workflows as an AI Engineer Co-op
+        at Hard Rock Digital.
+      </p>
+      <p>My current interests include:</p>
+      <ul class="interests">
+        <li>LLM evaluation and LLM-as-judge reliability</li>
+        <li>Reward modeling and reinforcement learning for LLMs</li>
+        <li>Language model alignment and behavior</li>
+      </ul>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+
+      <article>
+        <h3>
+          RAR²: Reliability-Aware Rubrics as Rewards
+          for Reinforcement Learning
+        </h3>
+        <p class="meta">Research collaboration · 2026</p>
+        <p>
+          Investigating the reliability of rubric-based rewards
+          for language model training. My contributions include
+          identifying inconsistent judge scores during reproduction,
+          comparing policy models, setting up GPU experiments,
+          and selecting evaluation benchmarks.
+        </p>
+      </article>
+
+      <article>
+        <h3>
+          VALIGN: A Corpus-to-Behavior Framework
+          for Predicting Multilingual LLM Values
+        </h3>
+        <p class="meta">Research collaboration · 2026</p>
+        <p>
+          Studying associations between positions expressed in
+          pretraining corpora and multilingual language model
+          responses to value questions. I contributed to
+          corpus processing and controlled BLOOM-model
+          experiments.
+        </p>
+      </article>
+
+      <article>
+        <h3>
+          CantoNLU: A Benchmark of Cantonese
+          Natural Language Understanding
+        </h3>
+        <p class="meta">
+          Accepted at the MRL Workshop at EMNLP 2026
+        </p>
+        <p>
+          A benchmark spanning seven Cantonese NLP tasks.
+          I trained a 32,000-token Cantonese tokenizer,
+          built a surprisal-based linguistic acceptability
+          evaluation pipeline, and compared four BERT models
+          to study cross-lingual transfer.
+        </p>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <article>
+        <h3>Hard Rock Digital</h3>
+        <p class="meta">
+          AI Engineer Co-op · September 2026–Present
+        </p>
+        <p>
+          Working on customer churn prediction, model
+          comparison, and MCP tools that connect Claude
+          Desktop with training and evaluation workflows.
+        </p>
+      </article>
+
+      <article>
+        <h3>CIBC</h3>
+        <p class="meta">
+          Backend Software Engineer Co-op · May–August 2026
+        </p>
+        <p>
+          Developed and tested backend APIs in Go and Java,
+          automated testing workflows, and supported
+          shared-platform service integration.
+        </p>
+      </article>
+
+      <article>
+        <h3>Government of Ontario</h3>
+        <p class="meta">
+          Application Programmer Co-op · May–August 2025
+        </p>
+        <p>
+          Built automated backend workflows,
+          spreadsheet-comparison tools, and SQL-based
+          analytics dashboards.
+        </p>
+      </article>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <article>
+        <h3>University of Toronto</h3>
+        <p class="meta">
+          Honours Bachelor of Science · Expected April 2027
+        </p>
+        <p>
+          Specialist (Co-op) in Computer Science;
+          Minor in Statistics.<br>
+          GPA: 3.81/4.00 · Dean’s List: 2024, 2025, 2026.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      Shunhua (Helena) Zhao · Last updated October 2026
+    </footer>
+  </main>
+</body>
+</html>
